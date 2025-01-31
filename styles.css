@@ -1,0 +1,163 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Light Theme (Default) */
+body.light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Dark Theme */
+body.dark {
+    background: #121212;
+    color: #fff;
+}
+
+/* Blue Theme */
+body.blue {
+    background: #007bff;
+    color: white;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Theme for Container */
+body.dark .container {
+    background: #333;
+}
+
+body.blue .container {
+    background: #0056b3;
+}
+
+/* Theme Selector */
+.theme-selector {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.theme-selector label {
+    margin-right: 5px;
+}
+
+.theme-selector select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Input and Buttons */
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Dark Theme Input */
+body.dark input {
+    background: #222;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* Blue Theme Input */
+body.blue input {
+    background: #004494;
+    color: white;
+    border: 1px solid #003377;
+}
+
+button {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* TODO List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Dark Mode for TODO items */
+body.dark li {
+    background: #444;
+    color: white;
+}
+
+body.blue li {
+    background: #0066cc;
+    color: white;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.actions button {
+    margin-left: 5px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.done-btn {
+    background: #ffc107;
+    color: white;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
